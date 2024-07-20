@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 120px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+  
+}
+
+.navbar-nav .nav-link {
+    color:#000;
+    text-decoration: none;
+    margin: 0 15px; /* Adjust spacing between nav links */
+    font-size: 20px;
+    font-weight: bold; /* Make the nav links bold */
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    color: black; /* Adjust hover color as needed */
+}
+
+/* Main content styling */
+.content {
+    padding: 50px;
+    background-color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.app-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-links img {
+    height: 50px; /* Increased image height */
+    margin: 0 20px; /* Increased margin between images */
+}
+
+/* Responsive design */
+@media (max-width: 420px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .app-links {
+        flex-direction: column;
+    }
+
+    .app-links img {
+        margin: 10px 0;
+    }
+}
+
+/* About Us Section */
+#about-us {
+    padding: 50px;
+    background-color: #e61717; /* Background color of the section */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+}
+
+#about-us h2 {
+    font-size: 2.5em; /* Font size for heading */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about-us p {
+    font-size: 1.2em; /* Font size for paragraph */
+    margin-bottom: 10px; /* Space below the paragraph */
+    max-width: 800px; /* Max width of the paragraph */
+    margin-left: auto; /* Center-align horizontally */
+    margin-right: auto; /* Center-align horizontally */
+}
+
+/* Responsive design for About Us section */
+@media (max-width: 768px) {
+    #about-us {
+        padding: 30px; /* Reduced padding on smaller screens */
+    }
+
+    #about-us h2 {
+        font-size: 2em; /* Smaller font size for heading */
+    }
+
+    #about-us p {
+        font-size: 1em; /* Smaller font size for paragraph */
+        margin-left: 15px; /* Adjust margins */
+        margin-right: 15px; /* Adjust margins */
+    }
+}
+
+@media (max-width: 420px) {
+    #about-us {
+        padding: 20px; /* Further reduced padding on very small screens */
+    }
+
+    #about-us h2 {
+        font-size: 1.8em; /* Smaller font size for heading */
+    }
+
+    #about-us p {
+        font-size: 0.9em; /* Smaller font size for paragraph */
+        margin-left: 10px; /* Adjust margins */
+        margin-right: 10px; /* Adjust margins */
+    }
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Responsive design for Features section */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Our Package Section */
+#our-packages {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#our-packages h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#our-packages p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.package-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.package-feature {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Background color for each feature */
+}
+
+.package-feature img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.package-feature p {
+    font-size: 1em;
+    color: #333; /* Text color for feature description */
+}
+
+/* Responsive design for Our Package section */
+@media (max-width: 768px) {
+    .package-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Subscription Section */
+#subscription-section {
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column;
+}
+
+.subscription-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-image: url('./images/sub.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between content and form */
+    text-align: left;
+}
+
+.subscription-box {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    transform: scale(0); /* Start with form scaled down */
+    opacity: 0; /* Start with form invisible */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+.subscription-box.show {
+    transform: scale(1); /* Scale up to normal size */
+    opacity: 1; /* Make form visible */
+}
+
+#subscription-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#subscription-section p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+/* Add your CSS styles here */
+.subscription-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.subscription-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subscription-form input[type="radio"],
+.subscription-form input[type="submit"] {
+    margin-bottom: 15px;
+}
+
+.subscription-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(3, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.subscription-form input[type="submit"]:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+.subscription-form input[type="submit"].clicked {
+    background-color: gray;
+    color: #333;
+    transform: scale(1);
+}
+
+.container {
+    position: relative;
+    width: fit-content;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-info h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact-container {
+    position: relative;
+    text-align: left;
+    margin: 20px;
+}
+
+.background-image {
+    width: 100%;
+    max-width: 6000px;
+    border-radius: 5px;
+}
+
+.contact-info {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin-bottom: -10px; /* Adjust based on your design */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Responsive design for Contact section */
+@media (max-width: 768px) {
+    .subscription-content,
+    .subscription-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
